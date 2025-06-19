@@ -19,6 +19,7 @@ import { TechCircles } from "@/components/ui/TechCircles";
 // import { ShimmerButton } from "@/components/magicui/shimmer-button";
 // import { motion } from "motion/react";
 import Cta from "@/components/ui/Cta";
+import AboutTerminal from "@/components/AboutTerminal";
 
 const defaultSpringConfig = {
   damping: 45,
@@ -31,7 +32,7 @@ export default function Home() {
     <div className="  overflow-hidden ">
       <section className="">
 
-        <div className="absolute inset-0 -z-10 h-[90vh] w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_2px),linear-gradient(to_bottom,#f0f0f0_2px,transparent_1px)] bg-[size:6rem_4rem]"></div>
+        <div className="fixed inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_2px),linear-gradient(to_bottom,#f0f0f0_2px,transparent_1px)] bg-[size:6rem_4rem]"></div>
 
 
 
@@ -72,7 +73,7 @@ export default function Home() {
         {/* <SmoothCursor springConfig={defaultSpringConfig}/> */}
       </section>
       <section className=" p-2 pb-0">
-        <div className="rounded-t-[50px] rounded-xl  text-red-50 bg-black p-6">
+        <div className="rounded-t-[50px] rounded-3xl  text-red-50 bg-black p-6 pb-36">
 
           <VelocityScroll numRows={1} defaultVelocity={1} className="text-xl"> ___ PROJECTS </VelocityScroll>
 
@@ -87,92 +88,54 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="p-6 py-28 flex justify-center bg-black mt-5">
-
-        <div className="flex gap-6   p-6 bg-white rounded-xl w-full max-w-3xl">
+      <section className=" flex justify-center mt-5 bg-black mx-2 rounded-3xl  ">
 
 
-          <div className="flex flex-col gap-2 w-1/3 items-center h-full justify-center ">
+        {/* <div className="flex gap-8   p-6  rounded-3xl w-full max-w-6xl items-center "> */}
+
+
+        {/* <div className="flex flex-col gap-2 w-1/3 items-center h-full justify-center bg-white p-8 rounded-xl ">
             <img src="/profile.jpg" className="rounded-full w-full border-4 border-black" />
 
 
-            <div className="gap-2 flex flex-col w-full">
-              <button className='px-10  py-4 bg-black text-white rounded-xl w-full'>
+            <div className="gap-2 flex flex-col w-full text-black">
+              <button className='px-10  py-4 bg-black  rounded-xl w-full'>
                 Instagram
               </button>
-              <button className='px-10  py-4 bg-black text-white rounded-xl w-full'>
+              <button className='px-10  py-4 bg-black  rounded-xl w-full'>
                 Instagram
               </button>
             </div>
 
 
 
+          </div> */}
+        <div className="w-full flex items-center">
+
+          <div className="w-2/5 border-2 rounded-2xl border-black">
+
+            <img src="/profile.jpg" className=" w-full rounded-l-2xl " />
           </div>
 
+          < div className="w-3/5  rounded-xl px-8">
 
-          <div className="w-2/3 h-min">
-
-            <Terminal>
-              <TypingAnimation className=" w-full">&gt; pnpm dlx shadcn@latest init</TypingAnimation>
-
-              <AnimatedSpan delay={1500} className="text-green-500">
-                <span>✔ Preflight checks.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={2000} className="text-green-500">
-                <span>✔ Verifying framework. Found Next.js.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={2500} className="text-green-500">
-                <span>✔ Validating Tailwind CSS.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={3000} className="text-green-500">
-                <span>✔ Validating import alias.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={3500} className="text-green-500">
-                <span>✔ Writing components.json.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={4000} className="text-green-500">
-                <span>✔ Checking registry.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={4500} className="text-green-500">
-                <span>✔ Updating tailwind.config.ts</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={5000} className="text-green-500">
-                <span>✔ Updating app/globals.css</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={5500} className="text-green-500">
-                <span>✔ Installing dependencies.</span>
-              </AnimatedSpan>
-
-              <AnimatedSpan delay={6000} className="text-blue-500">
-                <span>ℹ Updated 1 file:</span>
-                <span className="pl-2">- lib/utils.ts</span>
-              </AnimatedSpan>
-
-              <TypingAnimation delay={6500} className="text-muted-foreground">
-                Success! Project initialization completed.
-              </TypingAnimation>
-
-              <TypingAnimation delay={7000} className="text-muted-foreground">
-                You may now add components.
-              </TypingAnimation>
-            </Terminal>
-
-
+              <span className="font-Grotesk font-bold text-xl text-white ">So here's a bit </span>
+              <h3 className="text-6xl font-panchang font-bold text-white pb-4 ">about me</h3>
+            
+            <AboutTerminal />
           </div>
-
         </div>
 
+        {/* </div> */}
+
       </section>
-      <footer className="bg-white text-black p-20 ">
-        copyrights reserved to shubham lad
+      <footer className="  border-white text-white p-2 pb-0 ">
+        <div className="bg-black   p-20 pb-0   rounded-t-3xl">
+
+          <div className="text-center p-12">
+            <p className="font-mono">All copyright rights are reserved</p>
+          </div>
+        </div>
       </footer>
 
     </div>
