@@ -1,60 +1,109 @@
-import React from 'react'
-import { AnimatedSpan, Terminal, TypingAnimation } from './magicui/terminal'
+'use client';
+
+import React, { useState } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { AnimatedSpan, Terminal, TypingAnimation } from './magicui/terminal';
 
 export default function AboutTerminal() {
+    const [hasViewed, setHasViewed] = useState(false);
+
+    // Ref to track visibility
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, {
+        once: true,
+        margin: '-20% 0px', // triggers a bit earlier
+    });
+
+    // Only run animation when component is in view
+    React.useEffect(() => {
+        if (isInView && !hasViewed) {
+            setHasViewed(true);
+        }
+    }, [isInView, hasViewed]);
+
     return (
-        <Terminal >
-            <TypingAnimation className="w-full ">&gt; shubham info --fetch</TypingAnimation>
+        <div ref={ref}>
+            {hasViewed && (
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                >
+                    <Terminal>
+                        <TypingAnimation className="w-full ">&gt; shubham info --fetch</TypingAnimation>
 
-            <AnimatedSpan delay={1200} className="text-green-500">
-                <span>✔ Name: Shubham Lad</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={1200} className="text-green-500">
+                            <span>✔ Name: Shubham Lad</span>
+                        </AnimatedSpan>
 
-            <AnimatedSpan delay={1600} className="text-green-500">
-                <span>✔ Role: Full-stack Developer</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={1600} className="text-green-500">
+                            <span>✔ Role: Full-stack Developer</span>
+                        </AnimatedSpan>
 
-            <AnimatedSpan delay={2000} className="text-green-500">
-                <span>✔ Focus: Building scalable & modern web apps</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={2000} className="text-green-500">
+                            <span>✔ Focus: Building scalable & modern web apps</span>
+                        </AnimatedSpan>
 
-            <TypingAnimation delay={2500} className="w-full">&gt; shubham skills --list</TypingAnimation>
+                        <TypingAnimation delay={2500} className="w-full">&gt; shubham skills --list</TypingAnimation>
 
-            <AnimatedSpan delay={3000} className="text-blue-400">
-                <span>Frontend 🚀</span>
-            </AnimatedSpan>
-            <AnimatedSpan delay={3400} className="text-green-500 pl-4">
-                <span>React.js | Next.js | Tailwind CSS | TypeScript</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={3000} className="text-blue-400">
+                            <span>Frontend 🚀</span>
+                        </AnimatedSpan>
+                        <AnimatedSpan delay={3400} className="text-green-500 pl-4">
+                            <span>React.js | Next.js | Tailwind CSS | TypeScript</span>
+                        </AnimatedSpan>
 
-            <AnimatedSpan delay={3800} className="text-blue-400">
-                <span>Backend ⚡</span>
-            </AnimatedSpan>
-            <AnimatedSpan delay={4200} className="text-green-500 pl-4">
-                <span>Node.js | Express.js | Prisma ORM</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={3800} className="text-blue-400">
+                            <span>Backend ⚡</span>
+                        </AnimatedSpan>
+                        <AnimatedSpan delay={4200} className="text-green-500 pl-4">
+                            <span>Node.js | Express.js | Prisma ORM</span>
+                        </AnimatedSpan>
 
-            <AnimatedSpan delay={4600} className="text-blue-400">
-                <span>Database 🛢️</span>
-            </AnimatedSpan>
-            <AnimatedSpan delay={5000} className="text-green-500 pl-4">
-                <span>MongoDB | PostgreSQL | Neon.tech</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={4600} className="text-blue-400">
+                            <span>Database 🛢️</span>
+                        </AnimatedSpan>
+                        <AnimatedSpan delay={5000} className="text-green-500 pl-4">
+                            <span>MongoDB | PostgreSQL | Neon.tech</span>
+                        </AnimatedSpan>
 
-            <AnimatedSpan delay={5400} className="text-blue-400">
-                <span>DevOps & Tools 🛠️</span>
-            </AnimatedSpan>
-            <AnimatedSpan delay={5800} className="text-green-500 pl-4">
-                <span>Git | Vercel | Render | JWT Auth</span>
-            </AnimatedSpan>
+                        <AnimatedSpan delay={5400} className="text-blue-400">
+                            <span>DevOps & Tools 🛠️</span>
+                        </AnimatedSpan>
+                        <AnimatedSpan delay={5800} className="text-green-500 pl-4">
+                            <span>Git | Vercel | Render | JWT Auth</span>
+                        </AnimatedSpan>
 
-            <TypingAnimation delay={6200} className="w-full">&gt; mission --show</TypingAnimation>
+                        <TypingAnimation delay={6200} className="w-full">&gt; mission --show</TypingAnimation>
 
-            <AnimatedSpan delay={6600} className="text-muted-foreground">
-                <span>Craft impactful products. Learn. Inspire.</span>
-            </AnimatedSpan>
-        </Terminal>
+                        <AnimatedSpan delay={6600} className="text-muted-foreground">
+                            <span>Craft impactful products. Learn. Inspire.</span>
+                        </AnimatedSpan>
+                        <AnimatedSpan delay={7200} className="text-black text-base">
+                            <code>
+                                {"> "}
 
-    )
+                                <motion.span
+
+                                    animate={{
+                                        opacity: [1, 0, 1], // scale up and back
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        repeat: Infinity,
+                                        repeatType: "loop",
+
+                                    }}
+                                    className='font-bold'
+
+
+                                >_</motion.span>
+                            </code>
+                        </AnimatedSpan>
+
+                    </Terminal>
+                </motion.div>
+            )}
+        </div>
+    );
 }
-

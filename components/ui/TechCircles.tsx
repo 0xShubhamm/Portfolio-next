@@ -13,7 +13,7 @@ const Circle = forwardRef<
         <div
             ref={ref}
             className={cn(
-                "z-10 flex size-20 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+                "z-10 flex md:size-20 size-14 items-center justify-center rounded-full border-2 bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
                 className,
             )}
         >
@@ -26,7 +26,7 @@ const techIcons = [
     { name: "tailwindcss", position: "bottom-20 left-[200px]" },
     { name: "mongodb", position: "bottom-[200px] left-20" },
     { name: "nextjs", position: "bottom-[120px] right-[250px]" },
-    { name: "typescript", position: "top-[-110px] right-20" },
+    { name: "typescript", position: "top-[-110px] right-20 hidden md:block" },
     { name: "postgresql", position: "top-24 right-32" },
     { name: "docker", position: "left-12" }
 ];
@@ -38,7 +38,7 @@ export function TechCircles() {
             {techIcons.map((icon, index) => (
                 <motion.div
                     key={index}
-                    className={`absolute ${icon.position} z-[-10]`}
+                    className={` md:absolute ${icon.position} z-[-10]`}
                     initial={{ y: 0 }}
                     animate={{ y: 10 }} // small bounce distance
                     transition={{

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { memo } from "react";
 
 interface AuroraTextProps {
@@ -17,27 +16,22 @@ export const AuroraText = memo(
     speed = 1,
   }: AuroraTextProps) => {
     const gradientStyle = {
-      backgroundImage: `linear-gradient(135deg, ${colors.join(", ")}, ${
-        colors[0]
-      })`,
+      backgroundImage: `linear-gradient(135deg, ${colors.join(", ")}, ${colors[0]})`,
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
-      animationDuration: `${10 / speed}s`,
+      backgroundSize: "200% auto",
+      animation: `aurora ${10 / speed}s linear infinite`,
     };
 
     return (
-      <span className={`relative inline-block ${className}`}>
-        <span className="sr-only">{children}</span>
-        <span
-          className="relative animate-aurora bg-[length:200%_auto] bg-clip-text text-transparent"
-          style={gradientStyle}
-          aria-hidden="true"
-        >
-          {children}
-        </span>
+      <span
+        className={`inline-block ${className}`}
+        style={gradientStyle}
+      >
+        {children}
       </span>
     );
-  },
+  }
 );
 
 AuroraText.displayName = "AuroraText";
