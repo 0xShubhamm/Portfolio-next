@@ -15,15 +15,15 @@ function Appbar() {
             <nav className=' w-1/2 rounded-full bg-black  text-lg font-Grotesk hidden md:block  '>
                 <ul className='flex justify-around items-center px-10 py-2 h-full '>
                     <li className='p-2'>Home</li>
-                    <li className='p-2'>Projects</li>
-                    <li className='p-2'>About</li>
+                    <li className='p-2'>Projects </li>
+                    <li className='p-2'>About </li>
                 </ul>
             </nav>
             <div className=' md:flex items-center  px-10 py-4  rounded-full bg-black  border-4 border-purple-700  gap-4   font-panchang hidden  '>
-                <Image src="/spotify.png" alt="" className='w-10' />
+                <Image src="/spotify.png" alt="" className='w-10' width={40} height={40} />
                 <div className='text-sm text-center hidden sm:block'>
 
-                    <p className=' '>Let's Connect </p>
+                    <p className=' '>Let&apos;s Connect </p>
                     <span className=''>Through Music</span>
                 </div>
             </div>

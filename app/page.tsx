@@ -7,7 +7,7 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 export default function App() {
   return (
     <div className="  overflow-hidden">
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       <Hero />
       <Projects />
       <About />

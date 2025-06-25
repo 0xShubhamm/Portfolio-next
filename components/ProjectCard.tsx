@@ -5,7 +5,7 @@ function ProjectCard() {
     return (
         <div className=" w bg-white rounded-xl border-white border-2 font-Grotesk max-w-md">
             <div className=" border-b-2 border-black">
-                <Image src='/image.png' alt='' className='aspect-video object-cover rounded-t-xl' />
+                <img src='/image.png' alt='' className='aspect-video object-cover rounded-t-xl' />
             </div>
             <div className='text-black p-4 text-lg w-full'>
 
