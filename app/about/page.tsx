@@ -36,7 +36,7 @@ export default function page() {
           <span className="font-medium">{'}'}</span>
 
           <p className=" underline decoration-pink-300 underline-offset-4  text-lg font-normal">
-            if you wanna know more about me then, <br />  here's more about me
+            if you wanna know more about me then, <br />  here&apos;s more about me
             <Link href={"#about-me-section"}>
               <img
                 src="/down-arrow.svg"
@@ -72,12 +72,12 @@ export default function page() {
         <li className='font-medium underline decoration-pink-300 underline-offset-4 py-4 flex items-center  gap-1 text-lg'>lets talk about my education <img src="/student.svg" alt="avatar" className="w-4 inline " /></li>
         <div className="pl-6 border-l  border-gray-300 font-light">
 
-          <p className='text-lg'> i am  diploma 2025 passout student, i've done my <b> diploma in computer science and engineering </b> from @#&%$ (worst collage possible), so i am now taking admission to good collage for my higher studies i'll be completing my b.tech engineering in 2028 (Expected) , and i got <b> 86.80% in 10th SSC (i am proud of myself) </b>   </p>
+          <p className='text-lg'> i am  diploma 2025 passout student, i&apos;ve done my <b> diploma in computer science and engineering </b> from @#&%$ (worst collage possible), so i am now taking admission to good collage for my higher studies i&apos;ll be completing my b.tech engineering in 2028 (Expected) , and i got <b> 86.80% in 10th SSC (i am proud of myself) </b>   </p>
         </div>
         <li className='font-medium underline decoration-pink-300 underline-offset-4 py-4 flex items-center  gap-1 text-lg'>apart from this <img src="/student.svg" alt="avatar" className="w-4 inline " /></li>
         <div className="pl-6 border-l  border-gray-300 font-light">
 
-          <p className='text-lg'> <b> i wrote poems and write songs sometimes (for one of my favourite dream...)</b> i'm fine so where we yah you can checkout all that on my website called <b> <Link href={"https://blogit-blogs.vercel.app"}
+          <p className='text-lg'> <b> i wrote poems and write songs sometimes (for one of my favourite dream...)</b> i&apos;m fine so where we yah you can checkout all that on my website called <b> <Link href={"https://blogit-blogs.vercel.app"}
           className="italic"
           >blogit-blogs</Link> </b>, and yah i do like travelling and while traveling observing other peoples living and their life and for me central bus stand is filled with lots of stories daily so its my favourite place for this  </p>
         </div>
