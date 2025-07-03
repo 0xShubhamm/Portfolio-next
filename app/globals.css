@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url(https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900,1&display=swap);
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -73,10 +74,8 @@
   }
 }
 
-* {
-  /* outline: 2px solid lawngreen ; */
-}
 
+ 
 @theme inline {
   @keyframes shimmer-slide {
     to {

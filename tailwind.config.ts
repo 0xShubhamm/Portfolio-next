@@ -21,6 +21,9 @@ const config = {
       fontFamily: {
         Grotesk: ["Cabinet Grotesk", "sans-serif"],
         panchang: ["panchang", "sans-serif"],
+        spaceGrotesk: ["Space Grotesk", "sans-serif"],
+      }, boxShadow: {
+        'solid': '5px 5px 0 0 rgb(0 0 0)',
       },
       animation: {
         meteor: "meteor 5s linear infinite",

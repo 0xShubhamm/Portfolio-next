@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className="  border-white text-white ">
-            <div className="bg-black ">
+        <footer className="  border-white p-1 flex justify-center items-center ">
+          
 
-                <div className="text-center p-12">
-                    <p className="font-mono">All copyright rights are reserved</p>
+                <div className="text-center py-20 ">
+                    <p className="flex items-center gap-1">All copyright rights are reserved to <b>@shubham_lad </b><img src="/prickly-pear.svg" alt="prickly-pear" className="w-5 inline" /></p>
                 </div>
-            </div>
+           
         </footer>
     )
 }
