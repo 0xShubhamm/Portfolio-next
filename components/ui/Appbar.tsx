@@ -14,13 +14,13 @@ function Appbar() {
             <div className=' flex justify-between px-4 py-6 w-full  font-spaceGrotesk '>
                 <div>
 
-                    <h1 className='text-lg flex items-center  px-2  py-4 font-bold   '>
 
-                        <Link href={"/"}>
+                    <Link href={"/"}>
+                        <h1 className='text-lg flex items-center  px-2  py-4 font-bold   '>
                             Shubham Lad :)
-                        </Link>
 
-                    </h1>
+                        </h1>
+                    </Link>
 
                 </div>
                 <nav className='flex gap-3 text-white items-center   font-bold  '>

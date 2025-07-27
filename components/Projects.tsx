@@ -9,38 +9,28 @@ export default function Projects() {
             name: "blog-it blogs",
             description: "a simple website that lets you blog whatever you want.",
             imageurl: "/blogithome.png",
-            technology: "React.js, Cloudflare, Zod",
-            url: "https://blogit-blogs.vercel.app"
+            technology: "React.js, Cloudflare, Zod, JWT, Postgresql, Prisma",
+            url: "https://blogit-blogs.vercel.app",
+            giturl:"https://github.com/0xshubham/medium-blog"
         },
         {
-            name: "blog-it blogs",
-            description: "a simple website that lets you blog whatever you want.",
-            imageurl: "/blogit.png",
-            technology: "React.js, Cloudflare, Zod",
-            url: "https://blogit-blogs.vercel.app"
+            name: "NoBunk",
+            description: "modern web application to monitor and keep records of attendance",
+            imageurl: "/nobunk.png",
+            technology: "React.js, ExpressJs, TailwindCSS, Cursor, Postgresql, Prisma",
+            url: "https://no-bunk-fe.vercel.app/",
+            giturl: "https://github.com/0xshubham/nobunk"
         },
         {
-            name: "blog-it blogs",
-            description: "a simple website that lets you blog whatever you want.",
-            imageurl: "/blogit.png",
-            technology: "React.js, Cloudflare, Zod",
-            url: "https://blogit-blogs.vercel.app"
+            name: "Paytm Wallet - Basic",
+            description: "Basic payTM wallet insprired web app to understand CRUD Opperation",
+            imageurl: "/Paytm.png",
+            technology: "React.js, ExpressJs, TailwindCSS, Cursor, MongoDB",
+            url: "https://no-bunk-fe.vercel.app/",
+            giturl: "https://github.com/0xshubham/nobunk"
         },
-        {
-            name: "blog-it blogs",
-            description: "a simple website that lets you blog whatever you want.",
-            imageurl: "/blogit.png",
-            technology: "React.js, Cloudflare, Zod",
-            url: "https://blogit-blogs.vercel.app"
-        },
-        {
-            name: "blog-it blogs",
-            description: "a simple website that lets you blog whatever you want.",
-            imageurl: "/blogit.png",
-            technology: "React.js, Cloudflare, Zod",
-            url: "https://blogit-blogs.vercel.app"
-        },
-
+    
+       
     ];
 
     return (
@@ -90,7 +80,7 @@ export default function Projects() {
                             <div className="flex gap-1 w-full py-6">
 
                                 <Link href={project.url} className="px-2 py-2 bg-black text-white rounded-md  w-1/2  flex justify-center">live</Link>
-                                <Link href={project.url} className="px-2 py-2 bg-black text-white rounded-md  w-1/2  flex justify-center">github</Link>
+                                <Link href={project.giturl} className="px-2 py-2 bg-black text-white rounded-md  w-1/2  flex justify-center">github</Link>
                             </div>
                         </div>
                     </div>
