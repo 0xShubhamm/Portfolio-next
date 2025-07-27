@@ -24,7 +24,7 @@ export default function Projects() {
         {
             name: "Paytm Wallet - Basic",
             description: "Basic payTM wallet insprired web app to understand CRUD Opperation",
-            imageurl: "/Paytm.png",
+            imageurl: "/paytm.png",
             technology: "React.js, ExpressJs, TailwindCSS, Cursor, MongoDB",
             url: "https://no-bunk-fe.vercel.app/",
             giturl: "https://github.com/0xshubham/nobunk"
@@ -50,7 +50,7 @@ export default function Projects() {
                                 alt={project.name}
                                 className="aspect-video object-cover rounded-md mb-4 hover:shadow-lg border border-gray-300"
                                 initial={{ scale: 1 }}
-                                whileHover={{ scale:2}}
+                                whileHover={{ scale:1.2}}
                                 transition={{
                                     duration: 0.2,
                                     ease: "easeInOut"
