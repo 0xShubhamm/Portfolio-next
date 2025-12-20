@@ -28,10 +28,10 @@ export default function page() {
           <p className='text-lg pt-6  flex items-center '>reading about me is boring so checkout me here also<img src="/prickly-pear.svg" alt="prickly-pear" className="w-6 inline mx-1 " />:)</p>
           <span className='font-medium'>{'const socials = {'}</span>
           <ul className='pb-4 pl-4'>
-            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/github.svg" className="w-5" /><Link href={"http://github.com/imthanos36"} target="_blank">: github</Link> </li>
-            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/linkedin.svg" className="w-5" /> <Link href={"/"} target="_blank">: linkedin</Link></li>
-            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/twitter.svg" className="w-5" /> <Link href={"/"} target="_blank">: twitter</Link></li>
-            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/instagram.svg" className="w-5" /> <Link href={"/"} target="_blank">: instagram</Link></li>
+            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/github.svg" className="w-5" /><Link href={"http://github.com/0xShubhamm"} target="_blank">: github</Link> </li>
+            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/linkedin.svg" className="w-5" /> <Link href={"www.linkedin.com/in/shubhammlad"} target="_blank">: linkedin</Link></li>
+            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/twitter.svg" className="w-5" /> <Link href={"https://x.com/LadShubhamm"} target="_blank">: twitter</Link></li>
+            <li className="flex gap-2 items-center hover:underline underline-offset-4 decoration-pink-300"><img src="/instagram.svg" className="w-5" /> <Link href={"https://instagram.com/shubham.bug"} target="_blank">: instagram</Link></li>
           </ul>
           <span className="font-medium">{'}'}</span>
 
