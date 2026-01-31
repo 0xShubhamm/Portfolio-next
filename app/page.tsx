@@ -34,8 +34,8 @@ export default function App() {
 
             <div className='flex gap-2   '>
               <span className='w-fit bg-black py-2 px-4 rounded-md text-white'>(btw i am a developer)</span>
-              <li className="flex gap-2 items-center  font-bold hover:underline underline-offset-4 decoration-pink-300 border-2 border-black rounded-full px-2 "><img alt='github' src="/github.svg" className="w-6 p-1 " /><Link href={"http://github.com/imthanos36"} target="_blank">github</Link> </li>
-              <li className="flex gap-2 items-center font-bold hover:underline underline-offset-4 decoration-pink-300 border-2 border-black rounded-full px-2"><img alt='linkedin' src="/linkedin.svg" className="w-6" /> <Link href={"/"} target="_blank">linkedin</Link></li>
+              <li className="flex gap-2 items-center  font-bold hover:underline underline-offset-4 decoration-pink-300 border-2 border-black rounded-full px-2 "><img alt='github' src="/github.svg" className="w-6 p-1 " /><Link href={"https://github.com/0xShubhamm"} target="_blank">github</Link> </li>
+              <li className="flex gap-2 items-center font-bold hover:underline underline-offset-4 decoration-pink-300 border-2 border-black rounded-full px-2"><img alt='linkedin' src="/linkedin.svg" className="w-6" /> <Link href={"http://www.linkedin.com/in/shubhammlad"} target="_blank">linkedin</Link></li>
             </div>
             <p className='text-lg font-medium mt-5 pl-4 border-l-2 border-black/50'>  i am tech student pursuing b.tech in computer science and have good intrest in building web pages and servers  </p>
 

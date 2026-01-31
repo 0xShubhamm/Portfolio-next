@@ -11,7 +11,7 @@ export default function Projects() {
             imageurl: "/blogithome.png",
             technology: "React.js, Cloudflare, Zod, JWT, Postgresql, Prisma",
             url: "https://blogit-blogs.vercel.app",
-            giturl:"https://github.com/0xshubham/medium-blog"
+            giturl:"https://github.com/0xShubhamm/medium-blog"
         },
         {
             name: "NoBunk",
@@ -19,7 +19,7 @@ export default function Projects() {
             imageurl: "/nobunk.png",
             technology: "React.js, ExpressJs, TailwindCSS, Cursor, Postgresql, Prisma",
             url: "https://no-bunk-fe.vercel.app/",
-            giturl: "https://github.com/0xshubham/nobunk"
+            giturl: "https://github.com/0xShubhamm/nobunk"
         },
         {
             name: "Paytm Wallet - Basic",
@@ -27,7 +27,7 @@ export default function Projects() {
             imageurl: "/paytm.png",
             technology: "React.js, ExpressJs, TailwindCSS, Cursor, MongoDB",
             url: "https://no-bunk-fe.vercel.app/",
-            giturl: "https://github.com/0xshubham/nobunk"
+            giturl: "https://github.com/0xShubhamm/paytm-wallet"
         },
     
        
