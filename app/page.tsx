@@ -3,12 +3,16 @@ import TechIcons from '@/components/TechIcons'
 import Link from 'next/link'
 import React from 'react'
 
+
+
+
+
 export default function App() {
 
 
   return (
     <section >
-
+   
 
       <div className='p-4 max-w-screen-lg pb-10'>
 
@@ -16,7 +20,7 @@ export default function App() {
         <div className='flex flex-col md:flex-row gap-5 md:gap-16 w-full  md:items-start  justify-center  pt-32 pb-12 max-w-screen-lg '>
 
           <div className=' flex flex-col items-center gap-4 '>
-            < img alt='profile'  src="/profileBW.jpg" className='rounded-3xl md:max-w-sm block shadow-solid ' />
+            < img alt='profile' src="/profileBW.jpg" className='rounded-3xl md:max-w-sm block shadow-solid ' />
 
             <TechIcons type='work' />
 
